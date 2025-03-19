@@ -1,0 +1,135 @@
+@import 'style.css';
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Montserrat";
+    font-style: normal;
+}
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header{
+    background-image: url(./image/yellowbackground.svg);
+    min-height: 800px;
+}
+
+.header-top__star-2{
+    position: absolute;
+    padding-top: 94px;
+    padding-left: 63px;
+}
+
+.header-top__star-3{
+    position: absolute;
+    padding-left: 156px;
+    padding-top: 69px;
+}
+
+.header-top__star-5{
+    position: absolute;
+    padding-top: 538px;
+    padding-left: 948px;
+}
+
+.header-top__star-4{
+    position: absolute;
+    padding-top: 568px;
+    padding-left: 1013px;
+}
+
+.header-top__superstar{
+    position: absolute;
+    padding-left: 1170px;
+}
+
+.header-top__topfigure{
+    position: absolute;
+    padding-left: 1040px;
+}
+
+.header-top__centerfigure{
+    position: absolute;
+    padding-top: 254px;
+    padding-left: 1180px;
+}
+
+.header-top__bottomfigure{
+    position:absolute;
+    padding-top: 380px;
+    padding-left: 1368px;
+}
+
+
+
+.section-top{
+    box-sizing: border-box;
+    max-width: 769px;
+    padding-left: 120px;
+    padding-top: 196px;
+    
+    
+}
+
+.section-top__title{
+    font-family: "Montserrat";
+    font-size: 64px;
+    font-weight:bold;
+    font: optional;
+    color: black;
+    width: 120%;
+}
+
+.section-top__text{
+    box-sizing: border-box;
+    max-width: 647px;
+    padding-top: 24px;
+}
+
+.section-top__text-game{
+    font-family:  "Montserrat";
+    font-size: 24px;
+    font-weight: 400;
+    width: 106%;
+}
+
+.section-top__text-go{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    
+}
+
+.section-top__button{
+    border: 1px;
+    border-color: black;
+    width: 247px;
+    height: 45px;
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    margin-top: 48px;
+}
+
+.section-top__button:hover{  
+    background-color: white;
+    color: black;
+    transform: scale(1);
+    transition: 1s;
+    border-color: black;
+    border: 1px solid;
+}
+
+

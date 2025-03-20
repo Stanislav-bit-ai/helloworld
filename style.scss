@@ -131,18 +131,61 @@ body{
 .block-game{
     background-image: url(./image/blackfon.svg);
     position: relative;
+    height: 100%;
+    &__title{
+        color: white;
+        text-align: left;
+        padding-bottom: 24px;
+        padding-top: 94px;
+    }
+    &__text{
+        color: white;
+        text-align: left;
+        line-height: 32px;
+    }
+    
 }
 
-.block-game__title{
-    color: white;
-    text-align: left;
-    padding-bottom: 24px;
-    padding-top: 94px;
+.game-box{
+    padding-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
 }
 
-.block-game__text{
-    color: white;
-    text-align: left;
-    line-height: 32px;
+.game-box__one{
+    box-sizing: border-box;
+    width: 378px;
+    height: 473px;
+    background-color: white;
+    border-radius: 30px;
+    
 }
+
+.game-box__img{
+    width: 378px;
+    height: 314px;
+}
+
+.game-box__one-button{
+    width: 108px;
+    height: 36px;
+    border-radius: 52px;
+    color: black;
+    background-color:rgb(207, 201, 201);
+    border: 0;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.game-box__one-title{
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+
+
 

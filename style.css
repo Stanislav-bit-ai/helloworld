@@ -8,9 +8,10 @@ body {
   font-style: normal;
 }
 
-/*html{
-    scroll-behavior: smooth;
-}*/
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   padding-left: 119px;
   padding-right: 120px;
@@ -133,8 +134,13 @@ body {
   height: 314px;
 }
 
-.game-box__cart-button {
-  width: 108px;
+.game-box__cart-link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 27px;
+  align-content: center;
+  width: 98px;
   height: 36px;
   border-radius: 52px;
   color: black;

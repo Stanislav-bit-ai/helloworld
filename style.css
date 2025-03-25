@@ -171,4 +171,22 @@ html {
   font-weight: 600;
   text-align: center;
   padding-top: 61px;
+}
+
+@media (max-width: 425px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    background-image: none;
+    max-height: 700px;
+  }
+  .section-top {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

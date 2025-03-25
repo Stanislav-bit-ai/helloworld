@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Montserrat";
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+.center{
+    padding-left: 119px;
+      padding-right: 120px;
+  }
+
+.header{
+   background-color:#E1FF8F ;
+    min-height: 710px;
+    background-repeat: no-repeat;
+    background-image: url(./image/print.svg), url(./image/Star2.svg), url(./image/Star3.svg), url(./image/Star4.svg), url(./image/Star5.svg);
+    background-position: calc(100% + 490px) -333px, calc(100% - 1391px) 95px, calc(100% - 1320px) 70px, calc(100% - 415px) 568px, calc(100% - 528px) 538px;
+}
+
+.section-top{
+    box-sizing: border-box;
+    max-width: 769px;
+    padding-left: 120px;
+    padding-top: 196px;
+
+    &__title{
+        font-family: "Montserrat";
+        font-size: 64px;
+        font-weight:bold;
+        font: optional;
+        color: black;
+        width: 120%;
+        padding-left: 71px;
+    }
+
+    &__text{
+        box-sizing: border-box;
+        max-width: 647px;
+        padding-top: 24px;
+        line-height: 32px;
+        padding-left: 71px;
+    }
+    &__text-game{
+        font-family:  "Montserrat";
+        font-size: 24px;
+        font-weight: 400;
+        width: 120%;
+    }
+    &__text-go{
+        color: black;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Montserrat";
+        
+    }
+    &__button{
+       display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 12px;
+        border: 1px;
+        border-color: black;
+        width: 247px;
+        height: 45px;
+        border-radius: 60px;
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        margin-top: 54px;
+    }
+    &__button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 1ms;
+        transform: scale(1);
+        width: 247px;
+        height: 45px;
+
+    }
+    
+    
+}
+
+
+
+.block-game{
+    background-image: url(./image/Star1.png), url(./image/Star\ 11.svg), url(./image/Star\ 12.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1px) (+160px), calc(100% - 1455px) 861px, calc(100% - 1415px) 915px;
+    background-color: black;
+    position: relative;
+
+
+   
+   
+    &__title{
+        font-size: 64px;
+        color: white;
+        text-align: left;
+        padding-bottom: 24px;
+        padding-top: 94px;
+        padding-left: 36px;
+    }
+    &__text{
+        color: white;
+        text-align: left;
+        line-height: 32px;
+        font-size: 24px;
+        padding-left: 36px;
+    }
+    
+}
+
+.game-box{
+    padding-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 32px 32px;
+    padding-bottom: 64px;
+}
+
+.game-box__cart{
+    box-sizing: border-box;
+    width: 378px;
+    height: 473px;
+    background-color: white;
+    border-radius: 30px;
+    
+}
+.game-box__cart:hover{
+    
+        transform: scale(1.1);
+      
+}
+
+.game-box__img{
+    width: 378px;
+    height: 314px;
+}
+
+.game-box__cart-link{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 27px;
+    align-content: center;
+    width: 98px;
+    height: 36px;
+    border-radius: 52px;
+    color: black;
+    background-color:rgb(207, 201, 201);
+    border: 0;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.game-box__cart-title{
+    box-sizing: border-box;
+    width: 314px;
+    height: 117px;
+    font-size: 27px;
+    font-weight: 700;
+    padding-left: 32px;
+    padding-top: 16px;
+    line-height: 100%;
+}
+
+.footer{
+    box-sizing: border-box;
+    background-color: #BDED35;
+    height: 150px;
+    &__text{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 61px;
+    }
+}
+
+
+@import 'mobile';
+

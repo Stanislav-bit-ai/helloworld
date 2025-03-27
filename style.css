@@ -13,7 +13,7 @@ html {
 }
 
 .center {
-  padding-left: 119px;
+  padding-left: 120px;
   padding-right: 120px;
 }
 
@@ -171,10 +171,63 @@ html {
 
 .section-game__title {
   color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 71px;
 }
 
 .section-game__cart {
+  display: flex;
+  background-position: right;
   background-color: white;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  margin-left: 71px;
+  margin-top: 72px;
+}
+
+.section-game__cart-div {
+  width: 50%;
+  padding: 48px;
+}
+
+.section-game__cart-title {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.section-game__cart-text {
+  display: block;
+  width: 367px;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+
+.section-game__cart-button {
+  width: 247px;
+  height: 48px;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 36px;
 }
 
 .footer {

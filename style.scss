@@ -181,6 +181,7 @@ html{
 
 .section-game{
     background-color: black;
+    padding-bottom: 71px;
    
 }
 .section-game__title{
@@ -243,6 +244,8 @@ html{
 
 }
 .section-game__cart-button{
+    display: inline-block;
+    padding-top: 10px;
     width: 247px;
     height: 48px;
     border-radius: 30px;
@@ -283,14 +286,14 @@ html{
     .header{
         background-image: none;
         background-image: url(./image/Star2.svg), url(./image/Star3.svg), url(./image/Star4.svg), url(./image/Star5.svg), url(./image/star-mobile.svg);
-        background-position: calc(100% - 287px) 105px, calc(100% - 251px) 55px, calc(100% - 20px) 40px, calc(100% + 30px) 30px, calc(100% + 89px) -79px;
+        background-position: calc(100% - 287px) 105px, calc(100% - 251px) 55px, calc(100% - 27px) 565px, calc(100% - 139px) 563px, calc(100% + 89px) -79px;
     }
    
   
     .section-top{
         max-width: 262px;
         padding-left: 0;
-        padding-top: 147px;
+        padding-top: 48px;
     }
 
    .section-top__title{
@@ -304,7 +307,6 @@ html{
 
    .section-top__text{
     padding-left: 18px;
-    height: 59px;
     width: 296px;
     text-align: center;
    }
@@ -318,27 +320,38 @@ html{
    }
 
    .section-top__button{
-    margin-left: 48px;
-    margin-bottom: 196px;
-
+    margin-left: 18px;
+   width: 285px;
    }
+  
     .game{
         display: none;
     }
 
+    .section-game{
+        padding-top: 48px;
+    }
+
    .section-game__title{
     padding: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
    }
 
     .section-game__cart{
         flex-direction: column-reverse;
         justify-content: flex-end;
         margin-left: 0;
+        margin-top: 54px;
     }
     .section-game__cart-two{
         flex-direction: column-reverse;
         justify-content: flex-end;
         margin-left: 0;
+        min-height: 343px;
 
     }
    
@@ -353,7 +366,6 @@ html{
     line-height: 39px;
     letter-spacing: 0px;
     text-align: left;
-    padding-top: 28px;
     }
 
     .section-game__cart-text{
@@ -366,8 +378,14 @@ html{
     padding-top: 16px;
     }
 
-    .section-game__cart-button{
-        margin-bottom: 32px;
+   
+  
+
+    .footer{
+        height: 100px;
+    }
+    .footer__text{
+        padding-top: 32px;
     }
 
     

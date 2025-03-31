@@ -388,6 +388,13 @@ html{
         padding-top: 32px;
     }
 
+    @media (hover: hover){
+        .section-top__button{
+            background-color: black;
+            color: white;
+        }
+    }
+
     
 }
 

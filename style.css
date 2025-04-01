@@ -362,9 +362,14 @@ html {
     padding-top: 32px;
   }
 }
-@media (max-width: 767px) and (hover: hover) {
-  .section-top__button {
+@media (hover: none) {
+  .section-top__button:hover {
     background-color: black;
     color: white;
+    border: none;
+    transition: none;
+    transform: none;
+    width: 285px;
+    height: 45px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 //задание1
-let c = 10;
+/*let c = 10;
 alert(c);
 c = 20;
 alert(c);
@@ -67,4 +67,4 @@ alert(division);
 let subtraction = division - numb;
 alert(subtraction);
 let result = subtraction;
-alert(result);
+alert(result);*/

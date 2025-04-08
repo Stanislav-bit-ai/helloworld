@@ -90,6 +90,9 @@ html{
         height: 45px;
 
     }
+    &__button-mobile{
+        display: none;
+    }
     
     
 }
@@ -162,7 +165,7 @@ html{
     height: 36px;
     border-radius: 52px;
     color: black;
-    background-color:rgb(207, 201, 201);
+    background-color: #f7f7f7;
     border: 0;
     margin-top: 32px;
     margin-left: 32px;
@@ -204,6 +207,8 @@ html{
     max-width: 1200px;
 }
 
+
+
 .section-game__cart-two{
     display: flex;
     background-color: white;
@@ -243,6 +248,7 @@ html{
     padding-top: 24px;
 
 }
+
 .section-game__cart-button{
     display: inline-block;
     padding-top: 10px;
@@ -322,8 +328,26 @@ html{
    }
 
    .section-top__button{
+    display: none;
+   }
+
+   .section-top__button-mobile{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 18px;
+    border: 1px;
+    border-color: black;
+    height: 45px;
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    margin-top: 54px;
     margin-left: 18px;
-   width: 285px;
+    width: 285px;
    }
   
     .game{

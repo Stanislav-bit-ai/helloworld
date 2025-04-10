@@ -10,28 +10,144 @@
 </head>
 <body>
     <header class="header center">
-        <div class="header-top">
-            <div class="header-top__star-2"><img src="./Star2.svg" alt="звездочка"></div>
-            <div class="header-top__star-3"><img src="./Star3.svg" alt="звездочка"></div>
-            <div class="header-top__star-5"><img src="./Star5.svg" alt="звездочка"></div>
-            <div class="header-top__star-4"><img src="./Star4.svg" alt="звездочка"></div>
-            <div class="header-top__superstar"><img src="./superstar.svg" alt="большая звездочка"></div>
-            <div class="header-top__topfigure"><img src="./topfigure.svg" alt="верхняя фигура"></div>
-            <div class="header-top__centerfigure"><img src="./centerfigure.svg" alt="центральная фигура"></div>
-        <!--   <div class="header-top__bottomfigure"><img src="./bottomfigure.svg" alt="нижняя фигура"></div>-->
-            <section class="section-top">
-                <h1 class="section-top__title">Добро пожаловать</h1>
-                <h1 class="section-top__title"> на мой сайт мини-игр</h1>
-                <div class="section-top__text">
-                    <h2  class="section-top__text-game">Тебе предстоит пройти несколько увлекательных игр.
-                        Если готов, нажимай <a class="section-top__text-go" href="#">"Поехали"</a> и приступай.</h2>
-                    
-                </div>
-                <button class="section-top__button">Поехали!</button>  
-                
-            </section>
-        </div>    
-    </header>
+          
+        
+        <section class="section-top">
+            <h2 class="section-top__title">Добро пожаловать</h2>
+            <h2 class="section-top__title"> на мой сайт мини-игр</h2>
+            <div class="section-top__text">
+                <h2  class="section-top__text-game">Тебе предстоит пройти несколько увлекательных игр.
+                    Если готов, нажимай <a href="#game" class="section-top__text-go">"Поехали!"</a> и приступай.</h2>
+                    <a class="section-top__button" href="#game">Поехали!</a>
+                    <a class="section-top__button-mobile" href="#mobile">Поехали!</a>
+            </div>
+            
+              
+        </section>
     
+       
+    </header>
+
+    <div id="game" class="game">
+        <div class="block-game center">
+            <h1  class="block-game__title">Об играх</h1>
+            <p class="block-game__text">В моей коллекции представлено 6 игр на разные темы.</p>
+            <p class="block-game__text">Игры не сложные-в них может поиграть каждый.</p>
+            <p class="block-game__text">Все игры доступны для пользования.</p>
+       
+        <div class="game-box center">
+            <a class="game-box__link">
+                <div class="game-box__cart">
+                    <img class="game-box__img" src="./image/game1.svg" alt="игра1">
+                    <p class="game-box__cart-link" >Игра №1</p>
+                    <h2 class="game-box__cart-title">Угадай число</h2>
+                </div>
+            </a>
+            <a class="game-box__link">
+                <div class="game-box__cart">
+                    <img class="game-box__img" src="./image/game2.svg" alt="игра2">
+                    <p class="game-box__cart-link" >Игра №2</p>
+                    <h2 class="game-box__cart-title">Простая арифметика</h2>
+                </div>
+
+            </a>
+           
+            <a  class="game-box__link">
+                <div class="game-box__cart">
+                    <img class="game-box__img" src="./image/game3.svg" alt="игра3">
+                    <p class="game-box__cart-link" >Игра №3</p>
+                    <h2 class="game-box__cart-title">Переверни текст</h2>
+                </div>
+            </a>  
+               <a  class="game-box__link">
+                <div class="game-box__cart">
+                    <img class="game-box__img" src="./image/game4.jpg" alt="игра4">
+                
+                    <p class="game-box__cart-link">Игра №4</p>
+                    <h2 class="game-box__cart-title">Камень, ножницы, бумага</h2>
+                </div>
+               </a> 
+                  <a  class="game-box__link">
+                    <div class="game-box__cart">
+                        <img class="game-box__img" src="./image/game5.svg" alt="игра5">
+                        <p class="game-box__cart-link">Игра №5</p>
+                        <h2 class="game-box__cart-title">Простая викторина</h2>
+                    </div>
+                  </a> 
+                       <a  class="game-box__link">
+                        <div class="game-box__cart">
+                            <img class="game-box__img" src="./image/game6.svg" alt="игра6">
+                            <p class="game-box__cart-link">Игра №6</p>
+                            <h2 class="game-box__cart-title">Генератор случайных цветов</h2>
+                        </div>
+                       </a>   
+                           
+          
+        </div>
+    </div>
+</div>
+
+<section class="section-game center">
+    <h2  id="mobile" class="section-game__title">Мини-игры</h2>
+    <article class="section-game__cart">
+    <div class="section-game__cart-div">
+        <h2 class="section-game__cart-title">Угадай число</h2>
+        <h3 class="section-game__cart-text">Попробуй угодать случайное число от 1 до 100.</h3>
+        <a class="section-game__cart-button">Играть!</a>
+    </div>
+    <img class="section-game__cart-img" src="./image/mini-game1.svg" alt="мини-игра">
+    </article>
+    <article class="section-game__cart-two">
+        <div class="section-game__cart-div">
+            <h2 class="section-game__cart-title">Простая арифметика</h2>
+            <h3 class="section-game__cart-text">Попробуй решить простые арифметические задачи.</h3>
+            <a class="section-game__cart-button">Играть!</a>
+        </div>
+        <img class="section-game__cart-img" src="./image/mini-game2.svg" alt="мини-игра">
+    </article>
+    <article class="section-game__cart">
+        <div class="section-game__cart-div">
+            <h2 class="section-game__cart-title">Переверни текст</h2>
+            <h3 class="section-game__cart-text">Попробуй ввести текст, который будет перевернут.</h3>
+            <a class="section-game__cart-button">Играть!</a>
+        </div>
+        <img class="section-game__cart-img" src="./image/mini-game3.svg" alt="мини-игра">
+        </article>
+        <article class="section-game__cart-two">
+            <div class="section-game__cart-div">
+                <h2 class="section-game__cart-title">Викторина</h2>
+                <h3 class="section-game__cart-text">Отвечай на вопросы викторины с вариантами ответов.</h3>
+                <a class="section-game__cart-button">Играть!</a>
+            </div>
+            <img class="section-game__cart-img" src="./image/mini-game4.svg" alt="мини-игра">
+           
+        </article>
+        <article class="section-game__cart">
+            <div class="section-game__cart-div">
+                <h2 class="section-game__cart-title">Камень, ножницы, бумага </h2>
+                <h3 class="section-game__cart-text">Сыграй в популярную игру против компьютера.</h3>
+                <a class="section-game__cart-button">Играть!</a>
+            </div>
+            <img class="section-game__cart-img" src="./image/mini-game5.jpg" alt="мини-игра">
+        </article>
+        <article class="section-game__cart-two">
+                <div class="section-game__cart-div">
+                    <h2 class="section-game__cart-title">Генератор случайных цветов</h2>
+                    <h3 class="section-game__cart-text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</h3>
+                    <a class="section-game__cart-button">Играть!</a>
+                </div>
+                <img class="section-game__cart-img" src="./image/mini-game6.svg" alt="мини-игра">
+        </article>
+
+</section>
+
+
+   <footer class="footer">
+    <h3 class="footer__text">Все права защищены.</h3>
+   </footer>
+
+    
+     
+    <script src="script.js"></script>
 </body>
 </html>

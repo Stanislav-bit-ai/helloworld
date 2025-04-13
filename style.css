@@ -153,7 +153,6 @@ html {
 .game-box__cart-title {
   box-sizing: border-box;
   width: 67%;
-  height: 117px;
   font-size: 27px;
   font-weight: 700;
   padding-left: 32px;
@@ -289,6 +288,9 @@ html {
     text-align: center;
     padding-left: 21px;
     padding-top: 32px;
+  }
+  .section-top__br {
+    display: none;
   }
   .section-top__text {
     padding-left: 12px;

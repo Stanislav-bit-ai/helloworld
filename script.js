@@ -154,7 +154,7 @@ if (isNaN(number)) {
     }
 }
 
-//задание2
+//задание2 */
 
 
 let clientOS = 0; 
@@ -174,4 +174,3 @@ if (clientOS === 0) {
     }
 } 
 
-*/

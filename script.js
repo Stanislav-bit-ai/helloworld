@@ -154,7 +154,7 @@ if (isNaN(number)) {
     }
 }
 
-//задание2 */
+//задание2 
 
 
 let clientOS = 0; 
@@ -172,5 +172,143 @@ if (clientOS === 0) {
     } else {
         alert("Установите версию приложения для Android по ссылке.");
     }
-} 
+} */
 
+    //Домашнее задание 2.4
+
+
+    //задание1
+    for (let i = 0; i < 2; i++) {
+        console.log('Привет');
+           
+    }
+
+    //задание2
+
+   for (let i = 1; i <= 5; i++) {
+    console.log(i);
+    
+   }
+
+   //задание3
+
+   for (let i = 7; i <= 22; i++) {
+    console.log(i);
+    
+   }
+
+   //задание4
+
+   const obj = {
+    Коля : 200,
+    Вася : 300,
+    Петя : 400
+   }
+for (const key in obj) {
+   console.log(`${key} - ${obj[key]}`);
+}
+
+//задание5
+
+let n = 1000;
+let num = 0;
+ while (n >= 50) {
+    n /= 2;
+    console.log(n);
+    num++;
+ }
+ console.log(num);
+
+ //задание6
+
+ let dayFriday = 1;
+
+ let allDay = 31;
+ 
+ for (let i = dayFriday; i < allDay; i += 7) {
+    
+    console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
+ }
+
+
+ //Дополнительное задание
+
+ //задание1
+
+
+ let k = 100;
+ let nam = 0;
+ while (k > 0) {
+    k -= 7;
+    console.log(k);
+    nam ++;
+ }
+ console.log (nam);
+
+ //задание2
+
+ let month = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+
+ console.log( month [0]);
+ console.log( month [1]);
+ console.log( month[2]);
+ console.log( month[3]);
+ console.log( month[4]);
+ console.log( month[5]);
+ console.log( month[6]);
+ console.log( month[7]);
+ console.log( month[8]);
+ console.log( month[9]);
+ console.log( month[10]);
+ console.log( month[11]);
+
+ for (let i = 0; i >=  11;) {
+    i++;
+    console.log(month[i]);
+ }
+ 
+ //задание3
+const book = {
+    Name: 'A spontaneous person',
+    Author: 'Richard Russo',
+    Published: 1997,
+    Genre: 'novel'
+};
+console.log (`Name: ${book.Name}`);
+console.log (`Author: ${book.Author}`);
+console.log (`Pabliched: ${book.Published}`);
+console.log (`Genre: ${book.Genre}`);
+ 
+//задние4
+
+/*let y = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let y = minNumber; y <= 1; y++) {
+    
+    randomArray.push(minNumber )
+    
+}
+let = minNumber
+console.log*/
+
+
+
+function generateRandomArray(size) {
+    let randomArray = [];
+    for (let i = 0; i < size; i++) {
+        
+        randomArray.push(Math.floor(Math.random() * 10) + 1);
+    }
+    return randomArray;
+}
+
+
+let randomNumbers = generateRandomArray(10);
+
+
+
+
+let minNumber = Math.min(...randomNumbers);
+
+
+console.log("Минимальное число в массиве:", minNumber);

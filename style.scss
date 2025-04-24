@@ -135,6 +135,10 @@ html{
     padding-bottom: 64px;
 }
 
+.game-box__link{
+    text-decoration: none;
+}
+
 .game-box__cart{
     box-sizing: border-box;
     width: 378px;
@@ -167,6 +171,7 @@ html{
     border: 0;
     margin-top: 32px;
     margin-left: 32px;
+    
 }
 
 .game-box__cart-title{
@@ -177,7 +182,8 @@ html{
     padding-left: 32px;
     padding-bottom: 36px;
     padding-top: 18px;
-
+    color: black;
+    text-decoration: none;
 }
 
 .section-game{

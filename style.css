@@ -19,7 +19,7 @@ html {
 
 .header {
   background-color: #E1FF8F;
-  min-height: 710px;
+  height: 710px;
   background-repeat: no-repeat;
   background-image: url(./image/print.svg), url(./image/Star2.svg), url(./image/Star3.svg), url(./image/Star4.svg), url(./image/Star5.svg);
   background-position: calc(100% + 490px) -333px, calc(100% - 1391px) 95px, calc(100% - 1320px) 70px, calc(100% - 415px) 568px, calc(100% - 528px) 538px;
@@ -38,7 +38,6 @@ html {
   font-family: "Montserrat";
   font-size: 64px;
   font-weight: bold;
-  font: optional;
   color: black;
   width: 120%;
 }
@@ -180,7 +179,7 @@ html {
   text-align: left;
 }
 
-.section-game__cart {
+.section-game__cart-one {
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -190,6 +189,42 @@ html {
 }
 
 .section-game__cart-two {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 72px;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+}
+
+.section-game__cart-three {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 72px;
+  max-width: 1200px;
+}
+
+.section-game__cart-four {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 72px;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+}
+
+.section-game__cart-five {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 72px;
+  max-width: 1200px;
+}
+
+.section-game__cart-six {
   display: flex;
   background-color: white;
   border-radius: 30px;
@@ -279,8 +314,9 @@ html {
   }
   .header {
     background-image: none;
-    background-image: url(./image/Star2.svg), url(./image/Star3.svg), url(./image/Star4.svg), url(./image/Star5.svg), url(./image/star-mobile.svg);
-    background-position: calc(100% - 287px) 105px, calc(100% - 251px) 55px, calc(100% - 27px) 565px, calc(100% - 139px) 563px, calc(100% + 89px) -79px;
+    background-image: url(./image/Star-mobile1.png), url(./image/starmobile2.png), url(./image/Starmobile3.png), url(./image/Starmobile4.png), url(./image/star-mobile.svg);
+    background-position: calc(100% - 301px) 87px, calc(100% - 262px) 55px, calc(100% - 84px) 547px, calc(100% - 32px) 569px, calc(100% + 87px) -92px;
+    height: 690px;
   }
   .section-top {
     max-width: 262px;
@@ -292,8 +328,8 @@ html {
     font-weight: 700;
     line-height: 49px;
     text-align: center;
-    padding-left: 21px;
-    padding-top: 32px;
+    padding-left: 16px;
+    padding-top: 89px;
   }
   .section-top__br {
     display: none;
@@ -305,6 +341,7 @@ html {
   }
   .section-top__text-game {
     font-size: 16px;
+    line-height: 20px;
   }
   .section-top__text-go {
     font-size: 16px;
@@ -325,7 +362,7 @@ html {
     border-radius: 60px;
     background-color: black;
     color: white;
-    margin-top: 54px;
+    margin-top: 36px;
     margin-left: 18px;
     width: 285px;
   }
@@ -334,6 +371,7 @@ html {
   }
   .section-game {
     padding-top: 48px;
+    padding-bottom: 10px;
   }
   .section-game__title {
     padding: 0;
@@ -346,14 +384,27 @@ html {
   .section-game__cart {
     flex-direction: column-reverse;
     justify-content: flex-end;
-    margin-left: 0;
-    margin-top: 54px;
+    margin-top: 27px;
+    height: 530px;
   }
   .section-game__cart-two {
     flex-direction: column-reverse;
     justify-content: flex-end;
     margin-left: 0;
-    min-height: 343px;
+    margin-top: 39px;
+    height: 568px;
+  }
+  .section-game__cart-three {
+    height: 565px;
+  }
+  .section-game__cart-four {
+    height: 605px;
+  }
+  .section-game__cart-five {
+    height: 564px;
+  }
+  .section-game__cart-six {
+    height: 624px;
   }
   .section-game__cart-div {
     display: flex;
@@ -365,8 +416,8 @@ html {
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 0px;
-    text-align: left;
-    padding-bottom: 16px;
+    margin-left: -18px;
+    margin-top: -19px;
   }
   .section-game__cart-text {
     font-size: 16px;
@@ -374,14 +425,32 @@ html {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: left;
-    width: 244px;
+    width: 246px;
     padding-top: 16px;
+    margin-left: -20px;
+  }
+  .section-game__cart-button {
+    display: inline-block;
+    padding-top: 19px;
+    width: 286px;
+    height: 36px;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 31px;
+    margin-left: -19px;
+    font-size: 16px;
   }
   .footer {
     height: 100px;
   }
   .footer__text {
-    padding-top: 32px;
+    padding-top: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
   }
 }
 @media (hover: none) {

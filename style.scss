@@ -330,7 +330,7 @@ html{
     .header{
         background-image: none;
         background-image: url(./image/Star-mobile1.png), url(./image/starmobile2.png), url(./image/Starmobile3.png), url(./image/Starmobile4.png), url(./image/star-mobile.svg);
-        background-position: calc(100% - 301px) 87px, calc(100% - 262px) 55px, calc(100% - 84px) 547px, calc(100% - 32px) 569px, calc(100% + 87px) -92px;
+        background-position: calc(100% - 303px) 95px, calc(100% - 263px) 63px, calc(100% - 86px) 556px, calc(100% - 33px) 579px, calc(100% + 85px) -86px;
         height: 690px;
     }
    
@@ -346,8 +346,8 @@ html{
     font-weight: 700;
     line-height: 49px;
     text-align: center;
-    padding-left: 16px;
-    padding-top: 89px;
+    padding-left: 14px;
+    padding-top: 96px;
    }
 
    .section-top__br{
@@ -363,6 +363,8 @@ html{
    .section-top__text-game{
     font-size: 16px;
     line-height: 20px;
+    padding-top: 3px;
+    padding-left: 0px;
    }
 
    .section-top__text-go{
@@ -396,8 +398,9 @@ html{
     }
 
     .section-game{
-        padding-top: 48px;
+        padding-top: 56px;
         padding-bottom: 10px;
+        padding-left: 12px;
     }
 
    .section-game__title{
@@ -412,31 +415,36 @@ html{
     .section-game__cart{
         flex-direction: column-reverse;
         justify-content: flex-end;
-        margin-top: 27px;
+        margin-top: 48px;
         height: 530px;
+
     }
     .section-game__cart-two{
         flex-direction: column-reverse;
         justify-content: flex-end;
         margin-left: 0;
-        margin-top: 39px;
+        margin-top: 24px;
         height: 568px;
     }
 
     .section-game__cart-three{
         height: 565px;
+        margin-top: 24px;
     }
 
     .section-game__cart-four{
         height: 605px;
+        margin-top: 24px;
     }
 
     .section-game__cart-five{
-        height: 564px;
+        height: 579px;
+        margin-top: 24px;
     }
 
     .section-game__cart-six{
         height: 624px;
+        margin-top: 24px;
     }
    
     .section-game__cart-div{
@@ -449,8 +457,8 @@ html{
         font-weight: 700;
         line-height: 39px;
         letter-spacing: 0px;
-        margin-left: -18px;
-        margin-top: -19px;
+        margin-left: -19px;
+        margin-top: -24px;
     }
 
     .section-game__cart-text{
@@ -459,7 +467,7 @@ html{
     line-height: 20px;
     letter-spacing: 0px;
     text-align: left;
-    width: 246px;
+    width: 283px;
     padding-top: 16px;
     margin-left: -20px;
     }
@@ -474,8 +482,8 @@ html{
     background-color: black;
     font-weight: 600;
     text-align: center;
-    margin-top: 31px;
-    margin-left: -19px;
+    margin-top: 38px;
+    margin-left: -20px;
     font-size: 16px;
     }
 

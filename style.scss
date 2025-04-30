@@ -18,7 +18,7 @@ html{
 
 .header{
    background-color:#E1FF8F ;
-    min-height: 710px;
+    height: 710px;
     background-repeat: no-repeat;
     background-image: url(./image/print.svg), url(./image/Star2.svg), url(./image/Star3.svg), url(./image/Star4.svg), url(./image/Star5.svg);
     background-position: calc(100% + 490px) -333px, calc(100% - 1391px) 95px, calc(100% - 1320px) 70px, calc(100% - 415px) 568px, calc(100% - 528px) 538px;
@@ -37,7 +37,7 @@ html{
         font-family: "Montserrat";
         font-size: 64px;
         font-weight:bold;
-        font: optional;
+    
         color: black;
         width: 120%;
     }
@@ -95,16 +95,13 @@ html{
 }
 
 
-
 .block-game{
     background-image: url(./image/Star1.png), url(./image/Star\ 11.svg), url(./image/Star\ 12.svg);
     background-repeat: no-repeat;
     background-position: calc(100% - 1px) (+160px), calc(100% - 1455px) 861px, calc(100% - 1415px) 915px;
-    background-color: black;
+    background-color: #202027;
     position: relative;
 
-
-   
    
     &__title{
         font-size: 64px;
@@ -129,6 +126,10 @@ html{
     justify-content:center;
     gap: 32px;
     padding-bottom: 64px;
+}
+
+.game-box__link{
+    text-decoration: none;
 }
 
 .game-box__cart{
@@ -163,22 +164,23 @@ html{
     border: 0;
     margin-top: 32px;
     margin-left: 32px;
+    
 }
 
 .game-box__cart-title{
     box-sizing: border-box;
     width: 67%;
-    height: 117px;
     font-size: 27px;
     font-weight: 700;
     padding-left: 32px;
     padding-bottom: 36px;
     padding-top: 18px;
-
+    color: black;
+    text-decoration: none;
 }
 
 .section-game{
-    background-color: black;
+    background-color: #202027;
     padding-bottom: 71px;
    
 }
@@ -192,7 +194,7 @@ html{
     
 }
 
-.section-game__cart{
+.section-game__cart-one{
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -204,6 +206,42 @@ html{
 
 
 .section-game__cart-two{
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 72px;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+}
+
+.section-game__cart-three{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 72px;
+    max-width: 1200px;
+}
+
+.section-game__cart-four{
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 72px;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+}
+
+.section-game__cart-five{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 72px;
+    max-width: 1200px;
+}
+
+.section-game__cart-six{
     display: flex;
     background-color: white;
     border-radius: 30px;
@@ -273,6 +311,7 @@ html{
         padding-top: 61px;
     }
 }
+
 @import 'mobile';
 
 @media ( max-width: 767px){
@@ -290,8 +329,9 @@ html{
 
     .header{
         background-image: none;
-        background-image: url(./image/Star2.svg), url(./image/Star3.svg), url(./image/Star4.svg), url(./image/Star5.svg), url(./image/star-mobile.svg);
-        background-position: calc(100% - 287px) 105px, calc(100% - 251px) 55px, calc(100% - 27px) 565px, calc(100% - 139px) 563px, calc(100% + 89px) -79px;
+        background-image: url(./image/Star-mobile1.png), url(./image/starmobile2.png), url(./image/Starmobile3.png), url(./image/Starmobile4.png), url(./image/star-mobile.svg);
+        background-position: calc(100% - 303px) 95px, calc(100% - 263px) 63px, calc(100% - 86px) 556px, calc(100% - 33px) 579px, calc(100% + 85px) -86px;
+        height: 690px;
     }
    
   
@@ -306,8 +346,12 @@ html{
     font-weight: 700;
     line-height: 49px;
     text-align: center;
-    padding-left: 21px;
-    padding-top: 32px;
+    padding-left: 14px;
+    padding-top: 96px;
+   }
+
+   .section-top__br{
+    display: none;
    }
 
    .section-top__text{
@@ -318,6 +362,9 @@ html{
 
    .section-top__text-game{
     font-size: 16px;
+    line-height: 20px;
+    padding-top: 3px;
+    padding-left: 0px;
    }
 
    .section-top__text-go{
@@ -341,7 +388,7 @@ html{
     border-radius: 60px;
     background-color: black;
     color: white;
-    margin-top: 54px;
+    margin-top: 36px;
     margin-left: 18px;
     width: 285px;
    }
@@ -351,7 +398,9 @@ html{
     }
 
     .section-game{
-        padding-top: 48px;
+        padding-top: 56px;
+        padding-bottom: 10px;
+        padding-left: 12px;
     }
 
    .section-game__title{
@@ -366,15 +415,36 @@ html{
     .section-game__cart{
         flex-direction: column-reverse;
         justify-content: flex-end;
-        margin-left: 0;
-        margin-top: 54px;
+        margin-top: 48px;
+        height: 530px;
+
     }
     .section-game__cart-two{
         flex-direction: column-reverse;
         justify-content: flex-end;
         margin-left: 0;
-        min-height: 343px;
+        margin-top: 24px;
+        height: 568px;
+    }
 
+    .section-game__cart-three{
+        height: 565px;
+        margin-top: 24px;
+    }
+
+    .section-game__cart-four{
+        height: 605px;
+        margin-top: 24px;
+    }
+
+    .section-game__cart-five{
+        height: 579px;
+        margin-top: 24px;
+    }
+
+    .section-game__cart-six{
+        height: 624px;
+        margin-top: 24px;
     }
    
     .section-game__cart-div{
@@ -383,12 +453,12 @@ html{
         width: 0;
     }
     .section-game__cart-title{
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-    letter-spacing: 0px;
-    text-align: left;
-    padding-bottom: 16px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        margin-left: -19px;
+        margin-top: -24px;
     }
 
     .section-game__cart-text{
@@ -397,8 +467,24 @@ html{
     line-height: 20px;
     letter-spacing: 0px;
     text-align: left;
-    width: 244px;
+    width: 283px;
     padding-top: 16px;
+    margin-left: -20px;
+    }
+
+    .section-game__cart-button{
+        display: inline-block;
+    padding-top: 19px;
+    width: 286px;
+    height: 36px;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 38px;
+    margin-left: -20px;
+    font-size: 16px;
     }
 
    
@@ -408,12 +494,15 @@ html{
         height: 100px;
     }
     .footer__text{
-        padding-top: 32px;
-    }
-
-   
+        padding-top: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center
+        
+    }  
     
 }
+
 @media(hover:none){
     .section-top__button:hover{
         background-color:black;

@@ -67,12 +67,12 @@ alert(division);
 let subtraction = division - numb;
 alert(subtraction);
 let result = subtraction;
-alert(result);*/
+alert(result);
 
 //Домашнее задание 2.3
 //задание1
 
-/*let password = `Пароль`;
+let password = `Пароль`;
 let userPass = prompt (`Введите пароль`);
 if (userPass === password) {
     alert (`Пароль верный`);
@@ -172,7 +172,7 @@ if (clientOS === 0) {
     } else {
         alert("Установите версию приложения для Android по ссылке.");
     }
-} */
+} 
 
     //Домашнее задание 2.4
 
@@ -281,7 +281,7 @@ console.log (`Genre: ${book.Genre}`);
  
 //задние4
 
-/*let y = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let y = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 for (let y = minNumber; y <= 1; y++) {
     
@@ -289,7 +289,7 @@ for (let y = minNumber; y <= 1; y++) {
     
 }
 let = minNumber
-console.log*/
+console.log
 
 
 
@@ -301,17 +301,11 @@ function generateRandomArray(size) {
     }
     return randomArray;
 }
-
-
 let randomNumbers = generateRandomArray(10);
-
-
-
 
 let minNumber = Math.min(...randomNumbers);
 
-
-console.log("Минимальное число в массиве:", minNumber);
+console.log("Минимальное число в массиве:", minNumber);*/
 
 
 //Домашнее задание 2.5
@@ -353,7 +347,7 @@ console.log(up(25));
 
 //задание4
 
-/*function age() {
+function age() {
 
     let age = +prompt('Сколько тебе лет?')
     if (age < 0) {
@@ -371,7 +365,7 @@ console.log(up(25));
         
     
 }
-age()*/
+age()
 
 
 //задание5
@@ -392,7 +386,7 @@ console.log(calc('l', 'l'));
 
 //задание6
 
-/*function getNumber() {
+function getNumber() {
     let number = prompt('Введите число!');
     if (isNaN(number)) {
         return 'Переданный параметр не является числом';
@@ -400,7 +394,7 @@ console.log(calc('l', 'l'));
         return `${number} в кубе равняется ${number ** 3}`;
     }
 }
-console.log(getNumber())*/
+console.log(getNumber())
 
 //задание7
 
@@ -428,3 +422,6 @@ console.log(circle1.methodGetArea());
 console.log(circle1.methodGetPerimeter());
 console.log(circle2.methodGetArea());
 console.log(circle2.methodGetPerimeter());
+
+
+

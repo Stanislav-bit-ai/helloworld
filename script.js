@@ -67,7 +67,7 @@ alert(division);
 let subtraction = division - numb;
 alert(subtraction);
 let result = subtraction;
-alert(result);
+alert(result);*/
 
 //Домашнее задание 2.3
 //задание1
@@ -305,7 +305,7 @@ let randomNumbers = generateRandomArray(10);
 
 let minNumber = Math.min(...randomNumbers);
 
-console.log("Минимальное число в массиве:", minNumber);*/
+console.log("Минимальное число в массиве:", minNumber);
 
 
 //Домашнее задание 2.5

@@ -107,6 +107,7 @@ html{
     background-position: calc(100% - 1px) (+160px), calc(100% - 1455px) 861px, calc(100% - 1415px) 915px;
     background-color: #202027;
     position: relative;
+    padding-bottom: 40px;
 
    
     &__title{
@@ -132,6 +133,12 @@ html{
     justify-content:center;
     gap: 32px;
     padding-bottom: 54px;
+}
+
+.game-box_block{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
 }
 
 .game-box__link{
@@ -175,7 +182,7 @@ html{
 
 .game-box__cart-title{
     box-sizing: border-box;
-    width: 90%;
+    width: 89%;
     font-size: 32px;
     font-weight: 700;
     padding-left: 32px;
@@ -235,14 +242,14 @@ html{
     background-color: white;
     border-radius: 30px;
     margin-top: 72px;
-    flex-direction: row-reverse;
+    flex-direction: row;
     max-width: 1200px;
     margin-top: 32px;
 }
 
 .section-game__cart-five{
     display: flex;
-    flex-direction: row;
+    flex-direction:row-reverse;
     background-color: white;
     border-radius: 30px;
     margin-top: 72px;

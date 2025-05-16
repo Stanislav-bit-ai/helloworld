@@ -72,7 +72,7 @@ alert(result);*/
 //Домашнее задание 2.3
 //задание1
 
-let password = `Пароль`;
+/*let password = `Пароль`;
 let userPass = prompt (`Введите пароль`);
 if (userPass === password) {
     alert (`Пароль верный`);
@@ -421,7 +421,154 @@ const circle2 = {
 console.log(circle1.methodGetArea());
 console.log(circle1.methodGetPerimeter());
 console.log(circle2.methodGetArea());
-console.log(circle2.methodGetPerimeter());
+console.log(circle2.methodGetPerimeter());*/
 
 
 
+//Домашнее задание 2.6
+
+//задание1
+
+let numbers = [1, 5, 4, 10, 0, 3];
+    for (let element of numbers) {
+        console.log(element);
+        if (element === 10) {
+           
+            break
+        }
+        
+    }
+
+    //задание2
+
+    const nam = [1, 5, 4, 10, 0, 3];
+    const index = nam.indexOf(4);
+    console.log (index);
+
+    //задание3
+
+    const arr = [1, 3, 5, 10, 20];
+    const str = arr.join(' ');
+    console.log(str);
+
+    //задание4
+
+    const array = [];
+    for(let i = 0; i < 3; ++i) {
+        const array2 = []
+    for(let i = 0; i < 3; ++i) {
+        array2.push(1);
+    }
+        array.push(array2);
+    }
+    console.log(array);
+
+
+    //задание5
+
+    let fiveArr = [1, 1, 1];
+    fiveArr.push(2, 2, 2);
+    console.log(fiveArr);
+
+    //задание6
+
+    const sixArr = [9, 8, 7, 'a', 6, 5];
+    sixArr.sort()
+    console.log(sixArr);
+    sixArr.pop()
+    console.log(sixArr);
+    
+
+    //задание7
+
+   // const sevenArr = [9, 8, 7, 6, 5];
+   // const userNamber = +prompt('Угадай число');
+   // if (sevenArr.includes(userNamber)) {
+   //     alert('Угадал')
+
+   // } else{
+   //     alert('Не угадал');
+        
+   // }
+
+
+    //задание8
+
+    let stroc = 'abcdef';
+    stroc = stroc.split('');
+    console.log(stroc);
+    stroc.reverse();
+    stroc = stroc.join('');
+    console.log(stroc);
+
+    //задание9
+
+    const nextArr = [[1, 2, 3],[4, 5, 6]];
+    const newArr = [];
+    for(let i = 0; i < nextArr.length; i++) {
+        newArr.push(...nextArr[i])
+    }
+    console.log(newArr);
+    //задание10
+
+    const arr10 =[3,5,2,1,0,6,9,7,8];
+    for(let i = 0; i < arr10.length; i++) {
+        if(arr10[i + 1]){
+            console.log(arr10[i] + arr10[i + 1]);
+        }
+       
+    }
+
+
+    //задание11
+    function square(arr) {
+        return arr.map(item => item ** 2);
+    }
+
+    console.log(square([2,3,4]));
+
+
+    //задание12
+    function getLength(arr3) {
+        return arr3.map(item => item.length);
+    }
+    console.log(getLength(['mini','image']));
+
+    //задание13
+
+    function negativeNumbers(array) {
+        return array.filter(item => item < 0);
+    }
+    console.log(negativeNumbers([1, 2, 3, 4, 5, -6, -7]));
+
+
+    //задание14
+
+    function randomNumber() {
+        return Math.floor(Math.random() * 10);
+    }
+    const arr14 = [];
+    for(let i = 0; i < 10; i++) {
+        arr14.push(randomNumber());
+    }
+    console.log(arr14);
+    const evenArr = [];
+    for(let i = 0; i < arr14.length; i++) {
+        if (arr14 [i] % 2 === 0) {
+            evenArr.push(arr14[i]);
+        }
+    }
+    console.log(evenArr);
+
+    //задание15
+
+    function randomNumber() {
+        return Math.floor(Math.random() * 10);
+    }
+    const arr15 = [];
+    for(let i = 0; i < 2; i++) {
+        arr15.push(randomNumber());
+    }
+    console.log(arr15);
+
+    console.log(arr15.reduce((a, b ) => a + b) / arr15.length);

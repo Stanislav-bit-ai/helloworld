@@ -72,7 +72,7 @@ alert(result);*/
 //Домашнее задание 2.3
 //задание1
 
-/*let password = `Пароль`;
+let password = `Пароль`;
 let userPass = prompt (`Введите пароль`);
 if (userPass === password) {
     alert (`Пароль верный`);
@@ -172,7 +172,7 @@ if (clientOS === 0) {
     } else {
         alert("Установите версию приложения для Android по ссылке.");
     }
-} */
+} 
 
     //Домашнее задание 2.4
 
@@ -281,7 +281,7 @@ console.log (`Genre: ${book.Genre}`);
  
 //задние4
 
-/*let y = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let y = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 for (let y = minNumber; y <= 1; y++) {
     
@@ -289,7 +289,7 @@ for (let y = minNumber; y <= 1; y++) {
     
 }
 let = minNumber
-console.log*/
+console.log
 
 
 
@@ -301,14 +301,127 @@ function generateRandomArray(size) {
     }
     return randomArray;
 }
-
-
 let randomNumbers = generateRandomArray(10);
-
-
-
 
 let minNumber = Math.min(...randomNumbers);
 
-
 console.log("Минимальное число в массиве:", minNumber);
+
+
+//Домашнее задание 2.5
+
+//задание1
+
+function min(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+    
+}
+console.log( min(4, 8));
+console.log( min(6, 6));
+
+//задание2
+
+function isEven(n) {
+    if (n % 2 === 0) {
+        return 'Число четное';
+    } else {
+       return 'Число нечетное';
+    }
+}
+console.log(isEven(2));
+console.log(isEven(88736598363));
+//задание3
+
+
+function square(number) {
+    return number ** 2;
+}
+const up = (n) => n ** 2;
+square(25); 
+console.log(square(25));
+console.log(up(25));
+
+//задание4
+
+function age() {
+
+    let age = +prompt('Сколько тебе лет?')
+    if (age < 0) {
+        alert ('Вы ввели неправильное значение');
+    }
+     else if ( age >= 0 && age <= 12) {
+        alert ('Привет, друг!');
+     }  
+     else if (age >= 13) {
+        alert ('Добро пожаловать!');
+     } else {
+        alert('Вы ввели неправильное значение');
+     }
+       
+        
+    
+}
+age()
+
+
+//задание5
+
+function calc(a, b) {
+    console.log(isNaN(a));
+    console.log(isNaN(b));
+    
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом';
+         
+        
+    } else {
+        return a * b;
+    }
+}
+console.log(calc('l', 'l'));
+
+//задание6
+
+function getNumber() {
+    let number = prompt('Введите число!');
+    if (isNaN(number)) {
+        return 'Переданный параметр не является числом';
+    } else {
+        return `${number} в кубе равняется ${number ** 3}`;
+    }
+}
+console.log(getNumber())
+
+//задание7
+
+function getArea() {
+    return Math.PI * this.radius ** 2;
+}
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+
+}
+
+const circle1 = {
+    radius: 10,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+}
+const circle2 = {
+    radius: 20,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+
+}
+ 
+console.log(circle1.methodGetArea());
+console.log(circle1.methodGetPerimeter());
+console.log(circle2.methodGetArea());
+console.log(circle2.methodGetPerimeter());
+
+
+

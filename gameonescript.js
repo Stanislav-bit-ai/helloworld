@@ -8,10 +8,11 @@ document.getElementById("game-one").addEventListener("click",
     
         while (userGuess !== randomNumber) {
             userGuess = prompt('Угадай число от 1 до 100');
-            if (userGuess === null)
+        
+            if (userGuess === null) {
                 alert('Игра окончена');
-
-            if (userGuess <= 0) {
+                break
+            }if (userGuess <= 0) {
                 alert('Число не может быть меньше или равно ноль');
             } else if (userGuess > 100) {
                 alert('Число не может быть больше 100');
@@ -21,8 +22,10 @@ document.getElementById("game-one").addEventListener("click",
                 alert('Загаданное число меньше, попробуй еще!');
             } else {
                 alert('Молодец, ты угадал!');
+                break
             } 
         }
     }
 );
-gameOne();
+
+

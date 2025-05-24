@@ -429,7 +429,7 @@ console.log(circle2.methodGetPerimeter());*/
 
 //задание1
 
-let numbers = [1, 5, 4, 10, 0, 3];
+/*let numbers = [1, 5, 4, 10, 0, 3];
     for (let element of numbers) {
         console.log(element);
         if (element === 10) {
@@ -571,4 +571,138 @@ let numbers = [1, 5, 4, 10, 0, 3];
     }
     console.log(arr15);
 
-    console.log(arr15.reduce((a, b ) => a + b) / arr15.length);
+    console.log(arr15.reduce((a, b ) => a + b) / arr15.length);*/
+
+
+
+
+
+    // Домошнее задание 2.7
+
+
+    //задание1
+
+    let str = 'js';
+    str = str.toUpperCase();
+    console.log(str);
+
+
+    //задание2
+
+    function filter(arr, str) {
+        let result = [];
+      for (let i = 0; i < arr.length; i++) {
+        if(arr[i].toLowerCase().startsWith(str.toLowerCase())) {
+            result.push(arr[i]);
+        }
+        
+      }
+      return result;
+    }
+    console.log(filter(['sport', 'sportgame', 'soccer'], 'sp'))
+
+
+    //задание3
+
+    let nam = 32.58884;
+    console.log(Math.floor(nam));
+    console.log(Math.ceil(nam));
+    console.log(Math.round(nam));
+
+
+    //задание4
+
+    console.log(Math.max(52, 53, 49, 77, 21, 32));
+    console.log(Math.min(52, 53, 49, 77, 21, 32));
+
+
+    //задание5
+
+    function generateRandomArray() {
+        return(Math.floor(Math.random() * 10) + 1);
+
+    }
+    console.log(generateRandomArray());
+
+    //задание6
+
+    function getRandomNumber(nam) {
+        let arr = [];
+        for (let i = 0; i < nam; i++) {
+           arr.push(Math.floor(Math.random() * nam));
+            
+        }
+        return arr;
+        
+    }
+    console.log(getRandomNumber(10));
+    //
+    function generateRandomArray(nam) {
+       
+        const length = Math.floor(nam / 2);
+        const arr = [];
+    
+        for (let i = 0; i < length; i++) {
+           
+            const randomNum = Math.floor(Math.random() * (nam + 1));
+            arr.push(randomNum);
+        }
+    
+        return arr;
+    }
+    
+    
+    console.log(generateRandomArray(10));
+
+
+
+    //задание7
+
+    function generateRandomInt( min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) +min;
+
+    }
+
+    console.log(generateRandomInt(1, 10));
+
+
+    //задание8
+
+    console.log(new Date());
+
+
+    //задание9
+
+    const currentDate = new Date();
+    currentDate.setDate(currentDate.getDate() + 73);
+    console.log(currentDate);
+
+
+    //задание10
+
+    function formatDate(date) {
+       const days = ["Воскресенье", "Понидельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+       const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+       const year = date.getFullYear();
+       const day = date.getDate();
+       const month = date.getMonth();
+       const dayOfWeek = days[date.getDay()];
+       const hours = date.getHours();
+       const minutes = date.getMinutes();
+       const seconds = date.getSeconds();
+
+       return `
+       Дата : ${day} ${months[month]} ${year} - это ${dayOfWeek}.
+       Время : ${hours}:${ minutes}:${seconds}`;
+
+
+    }
+    console.log(formatDate(new Date()));
+
+
+
+    function reverseText() {
+        const input = document.getElementById('userInput').value; // получаем введённый текст
+        const reversed = input.split('').reverse().join(''); // переворачиваем
+        document.getElementById('result').textContent = reversed; // выводим результат
+      }

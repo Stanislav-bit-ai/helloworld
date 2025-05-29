@@ -4,17 +4,17 @@ document.getElementById("game-four").addEventListener('click', function() {
     const quiz = [
         {
             question: "Какого цвета небо?",
-            options: ["Красный", "Синий", "Зеленый"],
+            options: ["Красный-1", "Синий-2", "Зеленый-3"],
             correctAnswer: 2
         },
         {
             question: "Сколько дней в неделе?",
-            options: ["Шесть", "Семь", "Восемь"],
+            options: ["Шесть-1", "Семь-2", "Восемь-3"],
             correctAnswer: 2
         },
         {
             question: "Сколько у человека пальцев на одной руке?",
-            options: ["Четыре", "Пять", "Шесть"],
+            options: ["Четыре-1", "Пять-2", "Шесть-3"],
             correctAnswer: 2
         }
     ];

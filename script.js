@@ -706,3 +706,158 @@ console.log(circle2.methodGetPerimeter());*/
         const reversed = input.split('').reverse().join(''); // переворачиваем
         document.getElementById('result').textContent = reversed; // выводим результат
       }
+
+      //
+function functionWithCallback(callback) {
+   callback();
+}
+  const greet = () => {
+   console.log("Привет из именованной стрелочной функции");
+};
+   functionWithCallback(greet);
+   //
+
+
+
+   function functionWithCallback(callback) {
+  
+   callback("Глеб", "Фокин");
+}
+functionWithCallback((name, surname) => {
+   
+   console.log(`Привет, ${name} ${surname}!`);
+   
+});
+//
+
+function uploadCompleted () {
+    console.log('загрузка завершена успешно!');
+
+    console.log('Обработка файла...');
+    setTimeout(() => {
+        console.log('Обработка завершена!');
+
+        console.log('Сохранение файла...')
+
+        setTimeout(() => {
+            console.log('Файл успешно сохранен! Файл можно использовать!');
+
+        }, 1000);
+    }, 2000);
+}
+
+
+function startCompleted(callback) {
+    console.log('Начало загрузки файла...');
+
+    let progress = 0;
+    const intervalid = setInterval(() => {
+        progress += Math.floor(Math.random() * 10) + 5;
+        console.log(`Прогресс ${progress}%`)
+
+        if (progress >= 100) {
+            clearInterval(intervalid);
+            console.log('Загрузка завершина!');
+            if (callback) {
+                callback;
+            }
+        }
+
+    }, 1000);
+}
+startCompleted(uploadCompleted);
+
+
+//Домашнее задание 2.8
+
+//задание1
+
+const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+
+console.log(people.sort((a, b) => a.age - b.age ));
+
+
+//задание2
+
+function isPositive(num) {
+    return num > 0;
+}
+function isMale(person) {
+    return person.gender === 'male';
+}
+function filter(array, ruleFunction) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (ruleFunction(array[i])) {
+            result.push(array[i]);
+        }
+         
+    }
+    return result;
+   
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people1 = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+
+console.log(filter(people1, isMale));
+
+
+
+//задание3
+
+const allTheTime = 30 * 1000; 
+const intervalTime = 3 * 1000;   
+
+const intervalId = setInterval(() => {
+    console.log(new Date().toString());
+}, intervalTime);
+
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log("30 секунд прошло");
+}, allTheTime);
+
+
+//задание4
+
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+   
+}
+
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
+
+
+
+//задание5
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+    console.log(`Привет! ${name}`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond (() => sayHi('Глеб!'));
